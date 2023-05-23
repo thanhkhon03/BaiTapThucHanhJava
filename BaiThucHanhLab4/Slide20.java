@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ArrayListExample {
+public class Slide20 {
     public static void main(String[] args) {
         // Khởi tạo một ArrayList
         ArrayList<String> arrayList = new ArrayList<>();

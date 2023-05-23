@@ -3,9 +3,12 @@ package Sets;
 import java.util.HashSet;
 import java.util.Scanner;
 
+import Lists.Student;
+
 public class HashSetsDemo {
+
     public static void main(String[] args) {
-        HashSet<student> student = new HashSet<>();
+        HashSet<Student> students = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập số lượng sinh viên: ");
@@ -26,5 +29,6 @@ public class HashSetsDemo {
         }
 
         // Thực hiện các chức năng Thêm, sửa, xoá ở đây
+        scanner.close();
     }
 }

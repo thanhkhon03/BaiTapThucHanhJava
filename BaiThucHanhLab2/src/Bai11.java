@@ -1,30 +1,31 @@
-import java.until.Arrays;
-import java.until.Scanner;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Bai11 {
     public static void main(String[] args) {
-        
-    
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Nhập số phần tử của mảng: ");
         int n = input.nextInt();
 
-        // Khoi tao mang A voi n phan tu 
-        int[] A = new int [n];
+        // Khởi tạo mảng A với n phần tử
+        int[] A = new int[n];
 
-        // Nhap gia tri cho cac phan tu cua mang A tu ban phim 
-        for (int i = 0;i < n; i++){
-            System.out.print("Nhap phan tu thu" +(i + 1) + "cua mang");
+        // Nhập giá trị cho các phần tử của mảng A từ bàn phím
+        for (int i = 0; i < n; i++) {
+            System.out.print("Nhập phần tử thứ " + (i + 1) + " của mảng: ");
             A[i] = input.nextInt();
         }
-        
-        // Sap xep mang A theo thu tu tang dan
+
+        // Sắp xếp mảng A theo thứ tự tăng dần
         Arrays.sort(A);
 
-        // In ra man hinh mang A ban dau 
-        System.out.println("mang so ban dau: "+ Arrays.toString(A));
+        // In ra màn hình mảng A ban đầu
+        System.out.println("Mảng ban đầu: " + Arrays.toString(A));
 
-        // In ra man hinh mang A da sap xep tang dan
-        System.out.println("Mang da sap xep tang dan: " + Arrays.toString(A));
+        // In ra màn hình mảng A đã được sắp xếp tăng dần
+        System.out.println("Mảng đã được sắp xếp tăng dần: " + Arrays.toString(A));
 
-        
+        input.close();
     }
-    
 }

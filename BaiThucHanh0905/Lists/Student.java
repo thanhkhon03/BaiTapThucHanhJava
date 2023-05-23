@@ -7,11 +7,12 @@ public class Student {
     private int age;
 
     public void nhapThongTin() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập họ tên: ");
-        fullName = scanner.nextLine();
-        System.out.print("Nhập tuổi: ");
-        age = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Nhập họ tên: ");
+            fullName = scanner.nextLine();
+            System.out.print("Nhập tuổi: ");
+            age = scanner.nextInt();
+        }
     }
 
     public void hienThiThongTin() {

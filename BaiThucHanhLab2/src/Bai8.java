@@ -13,7 +13,7 @@ public class Bai8 {
 
         }
         double average = (double)sum /n;
-        System.out.println("Trung bình cộng của dãy số là: %.2f", average);
+        System.out.printf("Trung bình cộng của dãy số là: %.2f", average);
         scanner.close();
 
 

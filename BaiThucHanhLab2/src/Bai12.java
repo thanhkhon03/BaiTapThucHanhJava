@@ -1,37 +1,41 @@
-import java.until.Scanner;
+import java.util.Scanner;
+
 public class Bai12 {
-    public static void main(String[] args){
-        java.util.Scanner input = new Scanner (System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-        //Nhap so hang cua ma tran
-        System.out.print("Nhap so hang cua ma tran: ");
-        int rows = input next.Int();
+        // Nhập số hàng của ma trận
+        System.out.print("Nhập số hàng của ma trận: ");
+        int rows = input.nextInt();
 
-        // Nhap so cot cua ma tran 
-        System.out.print("Nhap so cot cua ma tran: ");
-        int cols = input next.Int();
+        // Nhập số cột của ma trận
+        System.out.print("Nhập số cột của ma trận: ");
+        int cols = input.nextInt();
 
-        // Khoi tao ma tran A voi kich thuoc row x cols
-        int [][] A = new int[rows][cols];
+        // Khởi tạo ma trận A với kích thước rows x cols
+        int[][] A = new int[rows][cols];
 
-        // Nhap gia tri cho cac phan tu cua ma tran A tu ban phim 
-        for (int i = 0;i < rows;i++){
-            for (int j = 0;j < cols ; j++){
-                System.out.print("Nhap phan tu A[" + i +"][" + j + "]: ");
+        // Nhập giá trị cho các phần tử của ma trận A từ bàn phím
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print("Nhập phần tử A[" + i + "][" + j + "]: ");
                 A[i][j] = input.nextInt();
             }
         }
 
-        // Tim phan tu lon nhat trong ma tran A 
-        int max = A[][];
-        for (int i=0;i<rows;i++){
-            for(int j=0;i<cols;i++){
-                if (A[0][0]>max){
-                    max = A [i][j];
+        // Tìm phần tử lớn nhất trong ma trận A
+        int max = A[0][0];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (A[i][j] > max) {
+                    max = A[i][j];
                 }
             }
         }
-        // In ra phan tu lon nhat cua ma tran A 
-        System.out.println("Phan tu lon nhat trong ma tran la: "+ max);
+
+        // In ra phần tử lớn nhất của ma trận A
+        System.out.println("Phần tử lớn nhất trong ma trận là: " + max);
+
+        input.close();
     }
 }

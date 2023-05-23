@@ -3,7 +3,7 @@ package Lists;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class LinkedListDemo {
+public class LinkedListsDemo {
     public static void main(String[] args) {
         LinkedList<Student> students = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
